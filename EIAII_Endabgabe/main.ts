@@ -5,7 +5,7 @@ namespace CustomFirework {
     export let cc2: CanvasRenderingContext2D = <CanvasRenderingContext2D>canvas.getContext("2d");
     let background: ImageData;
 
-    export let url: string = "https://webuser.hs-furtwangen.de/~haiderna/Database/index.php";
+    export let url: string = "https://webuser.hs-furtwangen.de/~meierdan/database/index.php";
     export let fireworks: string = "FireworkPresets";
 
     export let serverFirework: FireworkComponents[];
@@ -100,7 +100,7 @@ namespace CustomFirework {
             newInfoDiv.append(newNameSpan);
 
             let newPresetDiv: HTMLDivElement = document.createElement("div");
-            newPresetDiv.style.backgroundColor = serverFirework[index].colour.name;
+            newPresetDiv.style.backgroundColor = serverFirework[index].colour.fColour;
             newPresetDiv.classList.add("List_Preset_Element");
             newInfoDiv.append(newPresetDiv);
 
@@ -251,13 +251,13 @@ namespace CustomFirework {
         currentFirework.pattern = pattern;
         currentFirework.lifespan = Number(lifespan.value);
         currentFirework.size = Number(size.value);
-        let currentSize: HTMLSpanElement = document.querySelector("#creation_current_size");
+        let currentSize: HTMLSpanElement = <HTMLSpanElement>document.querySelector("#creation_current_size");
         currentSize.innerHTML = String(currentFirework.size);
-        let currentLifespan: HTMLSpanElement = document.querySelector("#creation_current_lifespan");
+        let currentLifespan: HTMLSpanElement = <HTMLSpanElement>document.querySelector("#creation_current_lifespan");
         currentLifespan.innerHTML = String(currentFirework.lifespan);
-        let currentColor: HTMLSpanElement = document.querySelector("#creation_current_color");
-        currentColor.style.backgroundColor = currentFirework.colour.name;
-        let currentPattern: HTMLSpanElement = document.querySelector("#creation_current_pattern");
+        let currentColor: HTMLSpanElement = <HTMLSpanElement>document.querySelector("#creation_current_color");
+        currentColor.style.backgroundColor = currentFirework.colour.fColour;
+        let currentPattern: HTMLSpanElement = <HTMLSpanElement>document.querySelector("#creation_current_pattern");
         currentPattern.innerHTML = "<img \" class=\"List_Pattern\" src=\"Ressources/" + String(currentFirework.pattern) + ".png\">";
     }
 
@@ -480,7 +480,7 @@ namespace CustomFirework {
             newInfoDiv.append(newNameSpan);
 
             let newPresetDiv: HTMLDivElement = document.createElement("div");
-            newPresetDiv.style.backgroundColor = localFirework[index].colour.name;
+            newPresetDiv.style.backgroundColor = localFirework[index].colour.fColour;
             newPresetDiv.classList.add("List_Preset_Element");
             newInfoDiv.append(newPresetDiv);
 
