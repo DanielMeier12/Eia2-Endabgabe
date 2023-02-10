@@ -7,8 +7,8 @@
 html
 {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(179, 243, 245);
-    color:hsla(200, 98%, 17%, 1)
+    background-color: rgb(199, 177, 240);
+    color:rgb(38, 1, 86)
 }
 header
 {
@@ -20,9 +20,9 @@ header
 }
 .Button 
 {
-    background-color: hsla(200, 60%, 38%, 0.618);
+    background-color: hsla(264, 60%, 38%, 0.618);
     border: none;
-    color: hsla(200, 98%, 17%, 1);
+    color: rgb(38, 1, 86);
     text-align: center;
     padding: 5px;
     margin: 5px;
@@ -78,14 +78,14 @@ header
     margin: 5px;
     margin-top: 0px;
     width: 1105px;
-    background-color: rgb(155, 255, 230);
+    background-color: rgb(199, 177, 240);
     
 }
 #Firework_Creation
 {
    grid-column: 1 / span 1; 
    grid-row: 1 / span 1;
-   background-color: hsla(200, 49%, 64%, 0.75);
+   background-color: hsla(271, 49%, 54%, 0.75);
    padding: 5px;
    position: relative;
 }
@@ -102,7 +102,7 @@ header
     position: relative;
     grid-column: 1 / span 1; 
     grid-row: 2 / span 1;
-    background-color: hsla(200, 49%, 64%, 0.75);;
+    background-color: hsla(271, 49%, 54%, 0.75);
     padding: 5px;
     height: 30px;
 
@@ -113,7 +113,7 @@ header
     position: relative;
     grid-column: 2 / span 1; 
     grid-row: 2 / span 1;
-    background-color: hsla(200, 49%, 64%, 0.75);
+    background-color: hsla(271, 49%, 54%, 0.75);
     padding: 5px;
     height: 30px;
 
@@ -135,7 +135,7 @@ li
     display: inline-block;
     height: auto;
     width: 100px;
-    background-color: hsla(200, 62%, 23%, 0.25);
+    background-color: hsla(271, 43%, 33%, 0.75);
     margin: 2px;
     cursor: pointer;
 }
