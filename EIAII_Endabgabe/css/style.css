@@ -8,7 +8,9 @@ html
 {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(199, 177, 240);
-    color:rgb(38, 1, 86)
+    color:rgb(38, 1, 86);
+    margin: auto;
+    max-width: fit-content;
 }
 header
 {
@@ -17,6 +19,11 @@ header
     position: relative;
     width: 1105px;
     text-align: center;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Button 
 {
@@ -88,6 +95,8 @@ header
    background-color: hsla(271, 49%, 54%, 0.75);
    padding: 5px;
    position: relative;
+   border: 5px solid rgb(38, 1, 86);
+   border-radius: 25px;
 }
 #Canvas_Div
 {
@@ -104,8 +113,7 @@ header
     grid-row: 2 / span 1;
     background-color: hsla(271, 49%, 54%, 0.75);
     padding: 5px;
-    height: 30px;
-
+    height: auto;
 }
 #List_Local
 {
@@ -115,7 +123,7 @@ header
     grid-row: 2 / span 1;
     background-color: hsla(271, 49%, 54%, 0.75);
     padding: 5px;
-    height: 30px;
+    height: 25px;
 
 }
 .trash
@@ -138,6 +146,8 @@ li
     background-color: hsla(271, 43%, 33%, 0.75);
     margin: 2px;
     cursor: pointer;
+    border: 2px solid rgb(38, 1, 86);
+    border-radius: 5px;
 }
 fieldset
 {
@@ -153,6 +163,8 @@ fieldset
     width: 50px;
     background-color: hsla(200, 62%, 23%, 0.25);
     text-align: center;
+    border: 2px solid rgb(38, 1, 86);
+    border-radius: 10px;
 }
 #creation_current_size
 {
@@ -176,7 +188,6 @@ fieldset
     width: 100px;
     height: auto;
     cursor: pointer;
-
 }
 .List_Name_Span
 {
@@ -186,7 +197,6 @@ fieldset
     height: auto;
     word-break: break-all;
     cursor: pointer;
-
 }
 .List_Preset_Element
 {
@@ -197,6 +207,7 @@ fieldset
     background-color: hsla(200, 62%, 23%, 0.25);
     text-align: center;
     cursor: pointer;
+    border-radius: 5px;
 }
 .List_Size_Span
 {
@@ -231,4 +242,20 @@ fieldset
     height: 30px;
     width: 30px;
     cursor: pointer;
+}
+select{
+    background-color: rgb(199, 177, 240);
+    border-style: none;
+    height: 25px;
+}
+input[type=text]{
+    background-color: rgb(199, 177, 240);
+    height: 25px;
+}
+::placeholder{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+input[type=radio]{
+    accent-color: rgb(38, 1, 86);
 }
