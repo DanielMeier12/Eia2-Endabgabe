@@ -1,3 +1,10 @@
+/*
+ Aufgabe: Fireworks_Endabgabe
+ Name: Daniel Meier
+ Matrikel: 271129
+ Datum: 12.02.2023
+ Quellen: Natan Haider, Dennis Grützmacher, Henning Reck
+*/
 namespace CustomFirework {
     window.addEventListener("load", handleLoad);
 
@@ -35,7 +42,7 @@ namespace CustomFirework {
         serverSaved: false
     };
 
-    async function handleLoad() {
+    async function handleLoad(): Promise<void> {
         let create: HTMLDivElement = <HTMLDivElement>document.getElementById("Firework_Creation");
         create.addEventListener("change", getInput);
         let save: HTMLInputElement = <HTMLInputElement>document.querySelector("#save");
@@ -563,5 +570,4 @@ namespace CustomFirework {
     {
         return Math.floor(Math.random() * (max - min + 1) + min);
     }
-
 }
